@@ -1,0 +1,18 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ù‘«ãøÿÿÿÿ8Õ¬Ï½¶2
+R
+java:S1854"6Remove this useless assignment to local variable "s1".(”Êá$8ü¬Ï½¶2
+G	java:S106"+Replace this use of System.out by a logger.(£¤œà8ü¬Ï½¶2
+L	java:S106
+"+Replace this use of System.out by a logger.(ğ³æÂûÿÿÿÿ8ı¬Ï½¶2
+G	java:S106"+Replace this use of System.out by a logger.(£´ÿÅ8ş¬Ï½¶2
+m
+java:S4276"QRefactor this code to use the more specialised Functional Interface 'IntSupplier'(”Êá$8ş¬Ï½¶2
+E
+java:S2140")Use "java.util.Random.nextInt()" instead.(”Êá$8ş¬Ï½¶2
+C
+java:S1481"'Remove this unused "s1" local variable.(”Êá$8ÿ¬Ï½¶2
+L	java:S106"+Replace this use of System.out by a logger.(ğ³æÂûÿÿÿÿ8ÿ¬Ï½¶2
+F
+java:S2140")Use "java.util.Random.nextInt()" instead.(“ÅÈ™8ÿ¬Ï½¶2
+L	java:S106"+Replace this use of System.out by a logger.(±»²ıÿÿÿÿ8ÿ¬Ï½¶2

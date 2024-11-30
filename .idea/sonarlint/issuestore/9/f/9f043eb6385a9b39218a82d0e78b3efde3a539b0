@@ -1,0 +1,17 @@
+
+Q
+java:S3740	"/Provide the parametrized type for this generic.(Í“’£ùÿÿÿÿ8¹Í–Äµ2
+Q
+java:S37404"/Provide the parametrized type for this generic.(ù¦ÏÞþÿÿÿÿ8¹Í–Äµ2
+Q
+java:S37404"/Provide the parametrized type for this generic.(ù¦ÏÞþÿÿÿÿ8¹Í–Äµ2
+{
+java:S1488"YImmediately return this expression instead of assigning it to the temporary variable "i".(Í—­‹üÿÿÿÿ8¹Í–Äµ2
+v
+java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(‡ÕÔÏ8¹Í–Äµ2
+]	java:S125,"<This block of commented-out lines of code should be removed.(®ÀÒùûÿÿÿÿ8ÉÍ–Äµ2
+G	java:S106;"+Replace this use of System.out by a logger.(áÐÝî8 ‚—Äµ2
+X
+java:S1128"6Remove this unused import 'com.sun.source.util.Trees'.(˜Ì±ùÿÿÿÿ8ÉÍ–Äµ2
+J
+java:S1128".Remove this unused import 'java.util.TreeSet'.(½îB8ÉÍ–Äµ2

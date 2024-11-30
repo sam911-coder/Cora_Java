@@ -1,0 +1,19 @@
+
+Q
+java:S3740"/Provide the parametrized type for this generic.(ù¦ÏŞşÿÿÿÿ8¼ØÛ˜¶2
+Q
+java:S3740"/Provide the parametrized type for this generic.(ù¦ÏŞşÿÿÿÿ8¼ØÛ˜¶2
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(«æáôùÿÿÿÿ8¯ÅŞ˜¶2
+Y
+java:S1854"7Remove this useless assignment to local variable "all".(«æáôùÿÿÿÿ8Üôß˜¶2
+G	java:S106"+Replace this use of System.out by a logger.(«‹Îõ8¼ØÛ˜¶2
+L	java:S106"+Replace this use of System.out by a logger.(Å˜õçüÿÿÿÿ8¼ØÛ˜¶2
+G	java:S106"+Replace this use of System.out by a logger.(¦Ã•8¼ØÛ˜¶2
+L	java:S106"+Replace this use of System.out by a logger.(Â°ü”ÿÿÿÿÿ8¼ØÛ˜¶2
+L	java:S106"+Replace this use of System.out by a logger.(Å˜õçüÿÿÿÿ8¼ØÛ˜¶2
+J
+java:S1481"(Remove this unused "all" local variable.(«æáôùÿÿÿÿ8Üôß˜¶2
+]	java:S125"<This block of commented-out lines of code should be removed.(©üĞ¬úÿÿÿÿ8Üôß˜¶2
+i
+java:S1128"LRemove this unused import 'queueInterface.asbtractDesignPattern.ArrayListt'.(ŒÒ¦ì8Üôß˜¶2

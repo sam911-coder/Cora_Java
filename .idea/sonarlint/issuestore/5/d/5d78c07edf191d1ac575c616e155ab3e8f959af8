@@ -1,0 +1,22 @@
+
+Q
+java:S3740"/Provide the parametrized type for this generic.(¯°Ì“üÿÿÿÿ8ŞÓ¥•¶2
+Q
+java:S3740"/Provide the parametrized type for this generic.(¯°Ì“üÿÿÿÿ8ŞÓ¥•¶2
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·Áâ8Â™¤•¶2
+X
+java:S1854"6Remove this useless assignment to local variable "i2".(ÏàÍ£şÿÿÿÿ8Â™¤•¶2
+C
+java:S2129"!Remove this "Integer" constructor(Èç¢÷úÿÿÿÿ8Â™¤•¶2
+j
+java:S5738"HRemove this call to a deprecated method, it has been marked for removal.(Èç¢÷úÿÿÿÿ8Â™¤•¶2
+C
+java:S2129	"!Remove this "Integer" constructor(úÑªùÿÿÿÿ8Â™¤•¶2
+j
+java:S5738	"HRemove this call to a deprecated method, it has been marked for removal.(úÑªùÿÿÿÿ8Â™¤•¶2
+X	java:S125"<This block of commented-out lines of code should be removed.(óÒÎó8½¥•¶2
+q
+java:S1215"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“8Ô™¤•¶2
+G	java:S106"+Replace this use of System.out by a logger.(¢Î€’8Ô™¤•¶2
+P
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8îÓ¥•¶2

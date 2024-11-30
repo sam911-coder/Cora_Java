@@ -1,8 +1,6 @@
 package streamApi.tasks;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class EmpData {
@@ -25,28 +23,155 @@ public class EmpData {
         emps.add(new Employee(15, "Ashok", 23, "Male", "Infrastructure", 2018, 12798.3));
         emps.add(new Employee(16, "Sanvi", 26, "Female", "Development", 2015, 28900.0));
 
+
         // 1) How many male and female employees are there in the Organization ?
-        Map<String, Long> map1 = emps.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
+        Map<String, Long> map1 = emps.stream()
+                .collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
         System.out.println(map1);
 
-        System.out.println("***********************************");
+        System.out.println("***************1***************");
 
-        // 2) How many employees are there in each department?
-        Map<String, Long> map2 = emps.stream().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.counting()));
+        // 2) Print the name of all department in the organization ?
+        emps.stream().map(Employee::getDepartment).distinct().forEach(name -> System.out.println(name));
+
+        System.out.println("***************2***************");
+
+        // 3) What is the average age of male and female employees ?
+        Map<String, Double> map2 = emps.stream()
+                .collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingInt(Employee::getAge)));
         System.out.println(map2);
 
-        System.out.println("***********************************");
+        System.out.println("***************3***************");
 
-        // 3) How many employees joined in each year?
-        Map<Integer, Long> map3 = emps.stream().collect(Collectors.groupingBy(Employee::getYearOfJoining, Collectors.counting()));
+        // 4) Get the details of highest paid employee in the organization?
+        Optional<Employee> optional = emps.stream()
+                .collect(Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary)));
+
+        if (optional.isPresent()) {
+            Employee employee = optional.get();
+            System.out.println(employee);
+        }
+
+        System.out.println("***************4***************");
+
+        // 5) Get the names of all employees who have joined after 2015?
+        emps.stream().filter(e -> e.yearOfJoining > 2015).map(e -> e.name).forEach(name -> System.out.println(name));
+        ;
+
+        System.out.println("***************5***************");
+
+        // 6) Count the number of employees in each department?
+        Map<String, Long> map3 = emps.stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment, Collectors.counting()));
         System.out.println(map3);
 
-        System.out.println("***********************************");
+        System.out.println("***************6***************");
 
-        // 4) How many employees have a salary greater than 25000?
-        long count4 = emps.stream().filter(e -> e.getSalary() > 25000).count();
-        System.out.println(count4);
+        // 7) What is the average salary of each department?
+        Map<String, Double> map4 = emps.stream().collect(
+                Collectors.groupingBy(Employee::getDepartment, Collectors.averagingDouble(Employee::getSalary)));
+        System.out.println(map4);
 
+        System.out.println("***************7***************");
+
+        // 8) Get the details of youngest male employee in the Development department?
+        Optional<Employee> optional2 = emps.stream()
+                .filter(e -> e.getGender().equals("Male") && e.getDepartment().equals("Development"))
+                .min(Comparator.comparing(Employee::getAge));
+
+        if (optional2.isPresent()) {
+            System.out.println(optional2.get());
+        }
+
+        System.out.println("***************8***************");
+
+        // 9) Who has the most working experience in the organization?
+        Optional<Employee> optional3 = emps.stream()
+                .collect(Collectors.minBy(Comparator.comparing(Employee::getYearOfJoining)));
+
+        if (optional3.isPresent()) {
+            System.out.println(optional3.get());
+        }
+
+        System.out.println("***************9***************");
+
+        // 10) How many male and female employees are there in the Sales team?
+        Map<String, Long> map5 = emps.stream().filter(e -> e.getDepartment().equals("Sales"))
+                .collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
+
+        System.out.println(map5);
+
+        System.out.println("***************10***************");
+
+        // 11) What is the average salary of male and female employees?
+        Map<String, Double> averageSalaries = emps.stream()
+                .collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingDouble(Employee::getSalary)));
+        System.out.println("Average salary of male employees: " + averageSalaries.get("Male"));
+        System.out.println("Average salary of female employees: " + averageSalaries.get("Female"));
+
+        System.out.println("***************11**************");
+
+        // 12) List down the names of all employees in each department.
+        Map<String, List<String>> employeesByDepartment = emps.stream().collect(Collectors
+                .groupingBy(Employee::getDepartment, Collectors.mapping(Employee::getName, Collectors.toList())));
+        employeesByDepartment.forEach((department, names) -> {
+            System.out.println("Department: " + department);
+            System.out.println("Employees: " + names);
+        });
+
+        System.out.println("***************12***************");
+
+        // 13) What is the average salary and total salary of the whole organization?
+        double totalSalary = emps.stream().mapToDouble(Employee::getSalary).sum();
+        double averageSalary = emps.stream().mapToDouble(Employee::getSalary).average().orElse(0.0);
+        System.out.println("Total salary of the organization: " + totalSalary);
+        System.out.println("Average salary of the organization: " + averageSalary);
+
+        System.out.println("***************13***************");
+
+        // 14) Separate the employees who are younger or equal to 25 years from those
+        // employees who are older than 25 years.
+
+        Map<Boolean, List<Employee>> partitionedByAge = emps.stream()
+                .collect(Collectors.partitioningBy(e -> e.getAge() <= 25));
+        List<Employee> youngerOrEqualTo25 = partitionedByAge.get(true);
+        List<Employee> olderThan25 = partitionedByAge.get(false);
+        System.out.println("Employees who are younger or equal to 25 years: " + youngerOrEqualTo25);
+        System.out.println("Employees who are older than 25 years: " + olderThan25);
+
+        System.out.println("***************14***************");
+
+        // 15) Who is the oldest employee in the organization?
+        Optional<Employee> oldestEmployee = emps.stream().max((e1, e2) -> Integer.compare(e1.getAge(), e2.getAge()));
+        oldestEmployee.ifPresent(employee -> System.out
+                .println("The oldest employee is: " + employee.getName() + " (" + employee.getAge() + " years old)"));
+
+        System.out.println("***************15***************");
+
+        // 16) Which employee has highest salary?
+        Optional<Employee> optional4 = emps.stream()
+                .collect(Collectors.maxBy(Comparator.comparing(Employee::getSalary)));
+
+        System.out.println(optional4.get());
+
+        System.out.println("***************16***************");
+
+        // 17 Get the emp who is having Second highest salary?
+
+        System.out.println("***************17***************");
+
+        // sort emps in salary descending order then skip first record
+        // Approach 1
+        Optional<Employee> findFirst = emps.stream().sorted(Comparator.comparing(Employee::getSalary).reversed())
+                .skip(1).findFirst();
+        System.out.println(findFirst.get());
+
+        // Approach 2
+        List<Employee> collect = emps.stream().sorted(Comparator.comparing(Employee::getSalary).reversed())
+                .collect(Collectors.toList());
+        System.out.println(collect.get(1));
+
+        System.out.println("******************************");
 
 
 

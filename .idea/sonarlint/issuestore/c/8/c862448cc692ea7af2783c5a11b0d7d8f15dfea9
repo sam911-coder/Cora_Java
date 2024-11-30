@@ -1,18 +1,0 @@
-
-Q
-java:S3740"/Provide the parametrized type for this generic.(‰¼§°þÿÿÿÿ8Â§à‘¶2
-Q
-java:S3740"/Provide the parametrized type for this generic.(‰¼§°þÿÿÿÿ8Â§à‘¶2
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çŸÿ–8Â§à‘¶2
-]	java:S125
-"<This block of commented-out lines of code should be removed.(ù¦ÏÞþÿÿÿÿ8Ñ§à‘¶2
-G	java:S106"+Replace this use of System.out by a logger.(¢Î€’8Ñ§à‘¶2
-L	java:S106!"+Replace this use of System.out by a logger.(ÃèÎúþÿÿÿÿ8Ñ§à‘¶2
-X	java:S125"<This block of commented-out lines of code should be removed.(ØÂ†Ó8Ñ§à‘¶2
-]	java:S125"<This block of commented-out lines of code should be removed.(Ü‡öÊÿÿÿÿÿ8Ñ§à‘¶2
-G	java:S106#"+Replace this use of System.out by a logger.(ÆºÚ’8Ñ§à‘¶2
-L	java:S106$"+Replace this use of System.out by a logger.(û·àŒùÿÿÿÿ8Ñ§à‘¶2
-G	java:S106&"+Replace this use of System.out by a logger.(…ù¿Î8Ñ§à‘¶2
-L	java:S106'"+Replace this use of System.out by a logger.(ÊìÇÍùÿÿÿÿ8Ñ§à‘¶2
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Æðà‘¶2

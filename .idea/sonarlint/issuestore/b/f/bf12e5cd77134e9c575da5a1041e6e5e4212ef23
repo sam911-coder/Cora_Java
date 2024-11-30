@@ -1,21 +1,0 @@
-
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û»Ç¸8É¾ë¿¶2
-L	java:S106"+Replace this use of System.out by a logger.(”ÇÑíûÿÿÿÿ8‡¿ë¿¶2
-L	java:S106"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ8‡¿ë¿¶2
-G	java:S106"+Replace this use of System.out by a logger.(ğ¿œ8‡¿ë¿¶2
-t
-java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(•£Ù”şÿÿÿÿ8‡¿ë¿¶2
-L	java:S106"+Replace this use of System.out by a logger.(êğ»ıÿÿÿÿ8‡¿ë¿¶2
-L	java:S106"+Replace this use of System.out by a logger.(È„®¯ûÿÿÿÿ8‡¿ë¿¶2
-b
-java:S1612"@Replace this lambda with method reference 'System.out::println'.(…¿øÿÿÿÿ8‡¿ë¿¶2
-L	java:S106"+Replace this use of System.out by a logger.(…¿øÿÿÿÿ8—¿ë¿¶2
-L	java:S106 "+Replace this use of System.out by a logger.(æ¢Î¾ùÿÿÿÿ8—¿ë¿¶2
-]
-java:S1612!"@Replace this lambda with method reference 'System.out::println'.(•ÚÓç8—¿ë¿¶2
-G	java:S106!"+Replace this use of System.out by a logger.(•ÚÓç8—¿ë¿¶2
-L	java:S106#"+Replace this use of System.out by a logger.(æÂ‘Èüÿÿÿÿ8—¿ë¿¶2
-G	java:S106$"+Replace this use of System.out by a logger.(¬¿ï÷8—¿ë¿¶2
-F	java:S106&"+Replace this use of System.out by a logger.(©ö˜8—¿ë¿¶2
-L	java:S106+"+Replace this use of System.out by a logger.(ÍúÀªÿÿÿÿÿ8—¿ë¿¶2
-G	java:S106."+Replace this use of System.out by a logger.(É”ÃÀ8—¿ë¿¶2

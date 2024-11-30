@@ -1,9 +1,0 @@
-
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢ Öa8…´Æµ2
-o
-java:S2095	"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(„°ó»ıÿÿÿÿ8É…´Æµ2
-Y
-java:S1854	"7Remove this useless assignment to local variable "fis".(„°ó»ıÿÿÿÿ8É…´Æµ2
-J
-java:S1481	"(Remove this unused "fis" local variable.(„°ó»ıÿÿÿÿ8É…´Æµ2
-]	java:S125"<This block of commented-out lines of code should be removed.(¡»¢üùÿÿÿÿ8É…´Æµ2

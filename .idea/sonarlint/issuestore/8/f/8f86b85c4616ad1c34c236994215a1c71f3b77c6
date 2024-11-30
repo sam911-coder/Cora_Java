@@ -1,9 +1,0 @@
-
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Î”¯J8ëñå·¶2
-N
-java:S1602
-",Remove useless curly braces around statement(«À“úùÿÿÿÿ8ëñå·¶2
-L	java:S106"+Replace this use of System.out by a logger.(çäýóÿÿÿÿÿ8ëñå·¶2
-I
-java:S1602",Remove useless curly braces around statement(“¬È¿8ëñå·¶2
-F	java:S106"+Replace this use of System.out by a logger.(šå«8ûñå·¶2

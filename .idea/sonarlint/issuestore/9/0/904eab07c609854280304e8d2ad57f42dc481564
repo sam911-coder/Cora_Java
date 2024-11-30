@@ -1,16 +1,0 @@
-
-~
-java:S1488
-"\Immediately return this expression instead of assigning it to the temporary variable "leng".(µĞ²ôÿÿÿÿÿ8úî·¸¶2
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Î”¯J8úî·¸¶2
-T
-java:S1611	"2Remove the parentheses around the "name" parameter(ú«û™şÿÿÿÿ8Šï·¸¶2
-G	java:S106"+Replace this use of System.out by a logger.(ï°…Ç8Šï·¸¶2
-G	java:S106"+Replace this use of System.out by a logger.(Œ€ÿ8Šï·¸¶2
-G	java:S106"+Replace this use of System.out by a logger.(¿˜öê8Šï·¸¶2
-G	java:S106"+Replace this use of System.out by a logger.(Œ€ÿ8Ÿ¯¹¸¶2
-T
-java:S1611"2Remove the parentheses around the "name" parameter(Öç©Şüÿÿÿÿ8Šï·¸¶2
-c
-java:S1612"AReplace this lambda with method reference 'CharSequence::length'.(Öç©Şüÿÿÿÿ8Šï·¸¶2
-L	java:S106"+Replace this use of System.out by a logger.(Ö¨±œıÿÿÿÿ8½ß¹¸¶2

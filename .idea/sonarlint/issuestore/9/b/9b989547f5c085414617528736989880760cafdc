@@ -1,25 +1,0 @@
-
-Q
-java:S3740"/Provide the parametrized type for this generic.(‰¼§°şÿÿÿÿ8°Ìï”¶2
-Q
-java:S3740"/Provide the parametrized type for this generic.(‰¼§°şÿÿÿÿ8°Ìï”¶2
-K
-java:S3740"/Provide the parametrized type for this generic.(ƒŠªN8°Ìï”¶2
-K
-java:S3740"/Provide the parametrized type for this generic.(ƒŠªN8°Ìï”¶2
-Y
-java:S4973"<Strings and Boxed types should be compared using "equals()".(³×¦‡8Ó“ğ”¶2
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«®áïûÿÿÿÿ8°Ìï”¶2
->
-java:S2129"!Remove this "Integer" constructor(çßùĞ8»Ìï”¶2
-e
-java:S5738"HRemove this call to a deprecated method, it has been marked for removal.(çßùĞ8»Ìï”¶2
->
-java:S2129	"!Remove this "Integer" constructor(šŞÏ®8ÀÌï”¶2
-e
-java:S5738	"HRemove this call to a deprecated method, it has been marked for removal.(šŞÏ®8ÀÌï”¶2
-L	java:S106"+Replace this use of System.out by a logger.(Ãá­Èşÿÿÿÿ8ÀÌï”¶2
-G	java:S106"+Replace this use of System.out by a logger.(¢Î€’8ÀÌï”¶2
-L	java:S106"+Replace this use of System.out by a logger.(ÕÇÕûÿÿÿÿ8ÀÌï”¶2
-G	java:S106"+Replace this use of System.out by a logger.(³×¦‡8©·ğ”¶2
-G	java:S106"+Replace this use of System.out by a logger.(Áû™œ8©Ìñ”¶2

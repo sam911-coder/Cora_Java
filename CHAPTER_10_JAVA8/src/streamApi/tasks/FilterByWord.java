@@ -3,24 +3,19 @@ package streamApi.tasks;
 import java.util.Arrays;
 import java.util.List;
 
-public class UpperDemo {
+public class FilterByWord {
     public static void main(String[] args) {
         List<String> fruits =
                 Arrays.asList("apple", "orange", "pineapple", "berry", "strawberry", "kiwi", "berry", "kiwi");
 
-        // with lambda expression
+        System.out.println("Filter By Word");
         fruits.stream()
-                .map(str->str.toUpperCase())
-                .sorted()
-                .forEach(str-> System.out.println(str));
-
-        System.out.println("********************");
-
-        // with method reference
-        fruits.stream()
-                .map(String::toUpperCase)
-                .sorted()
+                .filter(str -> str.contains("berry"))
                 .forEach(System.out::println);
 
+        System.out.println("Filter By Character");
+        fruits.stream()
+                .filter(str -> str.contains("w"))
+                .forEach(System.out::println);
     }
 }
